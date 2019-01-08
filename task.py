@@ -1,12 +1,9 @@
-import time
-
 class Task:
 
     def __init__(self, priority, time, name_task):
         self.priority = priority
         self.time = time
         self.name_task = name_task
-        #self.begin_time = time.time()
 
     def __lt__(self, other):
         return self.priority < other.priority
